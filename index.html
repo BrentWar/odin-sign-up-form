@@ -14,7 +14,8 @@
 
             <div class="left-side">
                 <div class="header">
-                    <img class=logo src="./images/odin-lined.png" alt="logo icon">ODIN
+                    <img class=logo src="./images/odin-lined.png" alt="logo icon">
+                    <div>ODIN</div>
                 </div>
                 <div class="footer">
                     Photo by <a href="https://unsplash.com/@mischievous_penguins?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Casey Horner</a> on <a href="https://unsplash.com/photos/RmoWqDCqN2E?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
@@ -32,10 +33,46 @@
 
                 <div class="middle">
                     <h1>Let's do this!</h1>
+
+                    <form id="form-items" action="./index.html" method="post">
+                        <ul>
+                            <li>
+                                <label for="first-name">First Name</label>
+                                <input type="text" id="first-name" name="first-name" required>
+                            </li>
+
+                            <li>
+                                <label for="last-name">Last Name</label>
+                                <input type="text" id="last-name" name="last-name" required>
+                            </li>
+
+                            <li>
+                                <label for="email">Email</label>
+                                <input type="email" name="email" id="email" required>
+                            </li>
+
+                            <li>
+                                <label for="phone-number">Phone Number</label>
+                                <input type="tel" id="phone-number" name="phone-number">
+                            </li>
+
+                            <li>
+                                <label for="password">Password</label>
+                                <input type="password" id="password" name="password" required>
+                            </li>
+
+                            <li>
+                                <label for="confirm-password">Confirm Password</label>
+                                <input type="password" id="confirm-password" name="confirm-password" required>
+                            </li>
+
+                        </ul>
+
+                    </form>
                 </div>
 
                 <div class="bottom">
-                    <button class="create-account">Create Account</button>
+                    <button class="create-account" type="submit" form="form-items">Create Account</button>
                     <p>Already have an account? <a href="./index.html">Log in</a></p>
 
                 </div>
